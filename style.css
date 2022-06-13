@@ -20,13 +20,16 @@ a {
 }
 h1{
     font-size: 36px;
-    font-weight: 200;
+    font-weight: 100;
 }
 h2{
     font-size: 26px;
+    text-transform: uppercase;
+    font-weight: 100;
+    color: #00442e;
 }
 a:hover {
-    color: #2b2929;
+    color: #00442e;
     transition: 3s ease;
 }
 p{
@@ -70,7 +73,7 @@ body{
    font-weight: 400;
 }
 .header-menu-links li a:hover {
-    color: #2b2929;
+    color:#00442e;
     transition: 0.3s ease;
 }
 /***************main******************/
@@ -81,58 +84,104 @@ body{
     padding: 30px;
 }
 .wrapper-my-foto{
-    width: 300px;
+    max-width: 300px;
     overflow: hidden;
     margin:0  auto;
 }
 .my-foto-img{
-    width: 300px;
+    max-width: 300px;
 }
 .my-name{
     margin-bottom: 30px;
-    text-align: center;
 }
 .title-text{
     background: #d9d1d1;
-    text-align: center;
+    padding: 0px 30px;
 }
 .text{
     text-align: center;
-    padding: 30px;
+    padding: 50px 80px;
 }
 .contacts{
     border: 1px solid rgb(4, 4, 4);
-    padding: 10px;
 }
-.contacts span{
-font-weight: 700;
-font-size: 24px;
+.inside{
+    padding: 20px 40px;
+    line-height: 40px; 
+    margin-bottom: 30px;
 }
-.contacts p{
-    font-size: 18px;
-    }
-.e-mail,.phone,.github{
+.centering{
+    text-align: center;
+}
+.contacts ul li a{
+    font-size: 20px;
     color: #000;
 }
-.e-mail:hover,.phone:hover,.github:hover{
+.contacts ul li a:hover{
     text-decoration: underline;
 }
+.adress::before{
+    content:' ';
+    background: url(./img/adress.png);
+    display: inline-block;
+    background-size:contain;
+    height: 20px;
+    width: 20px;
+    margin-right: 10px; 
+}
+.phone::before{
+    content:' ';
+    background: url(./img/tel.png);
+    display: inline-block;
+    background-size:contain;
+    height: 20px;
+    width: 20px;
+    margin-right: 10px; 
+}
+.github::before{
+    content:' ';
+    background: url(./img/free-icon-github-logo-25231.png);
+    display: inline-block;
+    background-size:contain;
+    height: 20px;
+    width: 20px;
+    margin-right: 10px; 
+}
+.e-mail::before{
+    content:' ';
+    background: url(./img/e-mail.png);
+    display: inline-block;
+    background-size:contain;
+    height: 20px;
+    width: 20px;
+    margin-right: 10px; 
+}
+
+
 .wrapper-information{
     padding: 30px 0px 30px 30px;
     background: rgb(235, 230, 230);
 }
 .skills ul li{
-margin-left: 10px;
 font-size: 20px;
 }
-.skills ul{
-    justify-content: space-between;
-}
-
+.skills ul li::before{
+    content:' ';
+    background: url(./img/icon1.png);
+    background-size:contain;
+    height: 15px;
+    width: 15px;
+    margin-right: 10px;
+    display: inline-block;
+    }
+.projects ul li a{
+        font-size: 24px;
+        color: #000;
+    }
 /*************footer************/
 .footer{
     background: rgb(126, 122, 122);
-    padding: 30px 30px;
+    padding: 20px 30px;
 }
 .footer-logo-img{
     width: 100px;
@@ -156,6 +205,41 @@ font-size: 20px;
     margin-right: 5px;
 }
 
-.github p{
+.footer-github p{
     padding: 8px 0px;
+}
+
+
+
+  /* 768px - 375px */
+  @media screen and (max-width: 767px) {
+    .wrapper-personal-data{
+        display: block;
+    }
+    .centering-xs{
+        text-align: center;
+    }
+    .text{
+        padding: 30px 30px;
+    }
+    .wrapper-my-foto{
+        max-width: 200px;
+    }
+    .my-foto-img{
+        max-width: 200px;
+        margin: 0 auto;
+    }
+    .header-menu-links{
+        display: none;
+    }
+    .footer-content{
+        display: block;
+    }
+    .footer-github{
+        display: block;
+        margin: 0 auto;
+    }
+   .footer-logo-img{
+    margin-top: 20px;
+   }
 }

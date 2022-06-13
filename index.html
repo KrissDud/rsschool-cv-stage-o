@@ -3,107 +3,147 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>CV</title>
-    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cv-3</title>
+    <link rel="icon" href="assets/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
     <div class="container">
-        <header class="header">
-           
-                <nav class="header-menu">
-                    <ul class="header-menu-links d-flex">
-                        <li><a href="#about-me">About me</a></li>
-                        <li><a href="#">Contacts</a></li>
-                        <li><a href="#">Aducation</a></li>
-                        <li><a href="#">Skills</a></li>
-                        <li><a href="#">Code</a></li>
-                        <li><a href="#">Projects</a></li>
-                    </ul>
-                </nav>
-         
-        </header>
+    <header class="header">
+       
+            <nav class="header-menu">
+                <ul class="header-menu-links d-flex">
+                    <li><a href="#about-me">About me</a></li>
+                    <li><a href="#">Contacts</a></li>
+                    <li><a href="#">Aducation</a></li>
+                    <li><a href="#">Skills</a></li>
+                    <li><a href="#">Work experience</a></li>
+                    <li><a href="#">Code</a></li>
+                </ul>
+            </nav>
+     
+    </header>
+
+    <main class="main">
     
-        <main class="main">
-                <div class="wrapper-personal-data d-flex">
-                    <div id="about-me" class="about-me">
-                        <div class="wrapper-my-foto">
-                            <img class="my-foto-img" src="assets/myphoto.jpg" alt="my foto">
+            <div class="wrapper-personal-data d-flex">
+                <div id="about-me" class="about-me">
+                    <div class="wrapper-my-foto">
+                        <img class="my-foto-img" src="img/myphoto.jpg" alt="my foto">
+                    </div>
+                    <div class="my-name centering">
+                        <h1>Kristina Dudkova</h1>
+                        <h3>Front-end Developer</h3>
+                    </div>
+                    <div class="contacts inside centering-xs">
+                        <ul>
+                            <li><a class="adress"> Minsk, Belarus</a></li>
+                            <li><a class="phone" href="tel:+375-29-766-15-52"> +375-29-766-15-52</a></li>
+                            <li><a class="e-mail" href="mailto:newdks@mail.ru">newdks@mail.ru</a></li>
+                            <li><a class="github" href="https://github.com/KrissDud" target="_blank"> KristinaD
+                            </a></li>
+                        </ul>
+                    </div>
+                    <div class="skills centering-xs">
+                        <div class="title-text">
+                            <h2>My skills:</h2> 
                         </div>
-                        <div class="my-name">
-                            <h1>Kristina Dudkova</h1>
-                            <h2>Front-end Developer</h2>
-                        </div>
-                        <div class="contacts">
-                            <p><span>Location:</span> Minsk, Belarus</p>
-                            <p><span>Phone:</span><a class="phone" href="tel:+375-29-766-15-52"> +375-29-766-15-52</a></p>
-                            <p><span>E-mail:</span> <a class="e-mail" href="mailto:newdks@mail.ru">newdks@mail.ru</a></p>
-                            <p><span>GitHab:</span>
-                            <a class="github" href="https://github.com/KrissDud" target="_blank"> KristinaD
-                            </a>
+                            <ul class="inside skills-text">
+                                <li>HTML5</li>
+                                <li>CSS</li>
+                                <li>JavaScript</li>
+                                <li>JQuery</li>
+                                <li>Figma</li>
+                            </ul>
+                            <div class="title-text ">
+                                <h2>Language:</h2> 
+                            </div>    
+                                <ul class="inside skills-text">
+                                    <li>Russian</li>
+                                    <li>Belarussion</li>
+                                    <li>English(A1)</li>
+                                </ul>
+                    </div>
+                </div>
+                <div class="wrapper-information">
+                    <div class="info-about-me">
+                        <div class="title-text centering">
+                            <h2>About me</h2> 
+                        </div>            
+                        <div class="text">
+                            <p>
+                                After completing the course "Web layout designer: the beginning" I realized exactly what I want to do. I was captured by the process of studying the layout and this is exactly the direction in which I want to develop. 
                             </p>
                         </div>
                     </div>
-                    <div class="wrapper-information">
-                        <div class="info-about-me">
-                            <div class="title-text">
-                                <h1>About me</h1> 
-                            </div>            
-                            <div class="text">
-                                <p>
-                                    After completing the course "Web layout designer: the beginning" I realized exactly what I want to do. I was captured by the process of studying the layout and this is exactly the direction in which I want to develop. 
-                                </p>
-                            </div>
-                        </div>
-                        <div class="info-aducation">
-                            <div class="title-text">
-                                <h1>Aducation</h1> 
-                            </div>            
-                            <div class="text">
-                                <h3>Belarusion State Technological Universitety</h3>
-                                <p> Environmental Enginer(2010-2016)</p>
-                            </div>
-                        </div>
-                        <div class="skills">
-                            <div class="title-text">
-                                <h1>Skills</h1> 
-                            </div>
-                                <ul class=" text d-flex">
-                                    <li>HTML5</li>
-                                    <li>CSS</li>
-                                    <li>JavaScript</li>
-                                    <li>JQuery</li>
-                                    <li>Figma</li>
-                                </ul>
-                        </div>
-                        <div class="info-code">
-                            <div class="title-text">
-                                <h1>Code Exampel</h1> 
-                            </div>            
-                            <div class="text">
-                                <p> function multiply(a, b) {<br>
-                                    return a * b;<br>
-                                  }<br>
-                                  let result = multiply(5, 4);<br>
-                                  alert( result );  
-                            </div>
+                    <div class="info-aducation">
+                        <div class="title-text centering">
+                            <h2>Aducation</h2> 
+                        </div>            
+                        <div class="text">
+                            <h3>Belarusion State Technological Universitety</h3>
+                            <p> Environmental Engineer</p>
+                            <p> 2010-2016</p>
                         </div>
                     </div>
-            </div>
-        </main>
+                    <div class="info-work-experience">
+                        <div class="title-text centering">
+                            <h2>Work experience</h2> 
+                        </div> 
+                        <div class="text">
+                            <h3>OJSC "INTEGRAL" - manager
+                                holding company "INTEGRAL"</h3>
+                            <p> Сhemical analysis laboratory assistant</p>
+                            <p> 2009 - 2011</p>
+                        </div>           
+                        <div class="text">
+                            <h3>OJSC "INTEGRAL" - manager
+                                holding company "INTEGRAL"</h3>
+                            <p> Process Engineer</p>
+                            <p> 2011 - (present time)</p>
+                        </div>
+                    </div>
     
-        <footer class="footer">
-        
-                <div class="footer-content d-flex">
-                    <a class="github d-flex" href="https://github.com/KrissDud" target="_blank">
-                        <img class="footer-logo-githab" src="assets/free-icon-github-logo-25231.png" alt="logo-githab">
-                        <p>My GitHab</p>
-                    </a>
-                    <p>2022</p>
-                    <a href="https://rs.school/js/" target="_blank"><img class="footer-logo-img" src="assets/rs_school_js.svg" alt="logo-footer"></a>
+                    <div class="info-code">
+                        <div class="title-text centering">
+                            <h2>Code Exampel</h2> 
+                        </div>            
+                        <div class="text">
+                            <p> function multiply(a, b) {<br>
+                                return a * b;<br>
+                              }<br>
+                              let result = multiply(5, 4);<br>
+                              alert( result );  
+                        </div>
+                    </div>
+                    <div class="projects">
+                        <div class="title-text centering">
+                            <h2>My projects</h2> 
+                        </div>
+                        <div class="text">
+                            <ul class="inside centering">
+                                <li><a href="https://github.com/KrissDud/rsschool-cv/blob/gh-pages/cv.md" target="_blank">CV(Markdown)</a></li>
+                                <li><a href="https://rolling-scopes-school.github.io/krissdud-JSFE2022Q1/shelter/pages/main/index.html" target="_blank">Shelter</a></li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-         
-        </footer>
-    </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+    
+            <div class="footer-content d-flex centering-xs">
+                <a class="footer-github d-flex" href="https://github.com/KrissDud" target="_blank">
+                    <img class="footer-logo-githab" src="img/free-icon-github-logo-25231.png" alt="logo-githab">
+                    <p>My GitHab</p>
+                </a>
+                <p>2022</p>
+                <a href="https://rs.school/js/" target="_blank"><img class="footer-logo-img" src="img/rs_school_js.svg" alt="logo-footer"></a>
+            </div>
+     
+    </footer>
+</div>
 </body>
 </html>
