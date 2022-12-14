@@ -1,0 +1,211 @@
+
+/******fonts**************/
+@font-face {
+    font-family: 'NanumMyeongjo-Regular' sans-serif;
+    src: url('../fonts/NanumMyeongjo-Regular.ttf') format('ttf');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+h1{
+    font-size: 36px;
+    font-weight: 100;
+}
+h2{
+    font-size: 26px;
+    text-transform: uppercase;
+    font-weight: 100;
+    color: #00442e;
+}
+a:hover {
+    color: #00442e;
+    transition: 3s ease;
+}
+p{
+    font-size: 16px;
+}
+ul, ol, li {
+    list-style: none;
+}
+img {
+    vertical-align: top;
+}
+body{
+    box-sizing: border-box; 
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    background: rgb(240, 233, 233);
+}
+.d-flex{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+.container{ 
+    max-width: 1280px;
+    margin: 0 auto;
+}
+.header{
+    background: rgb(126, 122, 122);
+    padding: 10px 30px;
+}
+.header-menu-links{
+    justify-content: space-between;
+}
+.header-menu-links li a{
+   color: #f0f8ff;
+   font-size: 24px;
+   font-family:'NanumMyeongjo';
+   font-weight: 400;
+}
+.header-menu-links li a:hover {
+    color:#00442e;
+    transition: 0.3s ease;
+}
+/***************main******************/
+.about-me{
+    justify-content: space-between;
+    background:  #d9d1d1;
+    height: 100%;
+    padding: 30px;
+}
+.wrapper-my-foto{
+    max-width: 300px;
+    overflow: hidden;
+    margin:0  auto;
+}
+.my-foto-img{
+    max-width: 300px;
+}
+.my-name{
+    margin-bottom: 30px;
+}
+.title-text{
+    background: #d9d1d1;
+    padding: 0px 30px;
+}
+.text{
+    text-align: center;
+    padding: 50px 80px;
+}
+.contacts{
+    border: 1px solid rgb(4, 4, 4);
+}
+.inside{
+    padding: 20px 40px;
+    line-height: 40px; 
+    margin-bottom: 30px;
+}
+.centering{
+    text-align: center;
+}
+.contacts ul li a{
+    font-size: 20px;
+    color: #000;
+}
+.contacts ul li a:hover{
+    text-decoration: underline;
+}
+.adress::before{
+    content:' ';
+    background: url(./img/adress.png);
+    display: inline-block;
+    background-size:contain;
+    height: 20px;
+    width: 20px;
+    margin-right: 10px; 
+}
+.phone::before{
+    content:' ';
+    background: url(./img/tel.png);
+    display: inline-block;
+    background-size:contain;
+    height: 20px;
+    width: 20px;
+    margin-right: 10px; 
+}
+.github::before{
+    content:' ';
+    background: url(./img/free-icon-github-logo-25231.png);
+    display: inline-block;
+    background-size:contain;
+    height: 20px;
+    width: 20px;
+    margin-right: 10px; 
+}
+.e-mail::before{
+    content:' ';
+    background: url(./img/e-mail.png);
+    display: inline-block;
+    background-size:contain;
+    height: 20px;
+    width: 20px;
+    margin-right: 10px; 
+}
+
+
+.wrapper-information{
+    padding: 30px 0px 30px 30px;
+    background: rgb(235, 230, 230);
+}
+.skills ul li{
+font-size: 20px;
+}
+.skills ul li::before{
+    content:' ';
+    background: url(./img/icon1.png);
+    background-size:contain;
+    height: 15px;
+    width: 15px;
+    margin-right: 10px;
+    display: inline-block;
+    }
+.projects ul li a{
+        font-size: 24px;
+        color: #000;
+    }
+/*************footer************/
+.footer{
+    background: rgb(126, 122, 122);
+    padding: 20px 30px;
+}
+.footer-logo-img{
+    width: 100px;
+}
+.footer-content{
+    justify-content: space-between;
+}
+.footer-content a{
+    color: #000;
+    font-size: 20px;
+    font-weight: 700;
+}
+.footer-content p{
+    font-size: 20px;
+    font-weight: 700;
+    padding: 10px 0;
+}
+.footer-logo-githab{
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+}
+
+.footer-github p{
+    padding: 8px 0px;
+}                    
