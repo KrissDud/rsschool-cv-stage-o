@@ -209,3 +209,35 @@ font-size: 20px;
 .footer-github p{
     padding: 8px 0px;
 }                    
+ /* 768px - 375px */
+ @media screen and (max-width: 767px) {
+    .wrapper-personal-data{
+        display: block;
+    }
+    .centering-xs{
+        text-align: center;
+    }
+    .text{
+        padding: 30px 30px;
+    }
+    .wrapper-my-foto{
+        max-width: 200px;
+    }
+    .my-foto-img{
+        max-width: 200px;
+        margin: 0 auto;
+    }
+    .header-menu-links{
+        display: none;
+    }
+    .footer-content{
+        display: block;
+    }
+    .footer-github{
+        display: block;
+        margin: 0 auto;
+    }
+   .footer-logo-img{
+    margin-top: 20px;
+   }
+}
