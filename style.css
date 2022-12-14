@@ -158,7 +158,6 @@ body{
     margin-right: 10px; 
 }
 
-
 .wrapper-information{
     padding: 30px 0px 30px 30px;
     background: rgb(235, 230, 230);
@@ -190,10 +189,19 @@ font-size: 20px;
 .footer-content{
     justify-content: space-between;
 }
+.footer-nav-links{
+    justify-content: space-between;
+    align-items: center;
+}
 .footer-content a{
     color: #000;
     font-size: 20px;
     font-weight: 700;
+    transition: 0.5s ease;
+}
+.footer-nav-links li:hover{
+    transform: scale(1.1);
+    transition: 0.5s ease;
 }
 .footer-content p{
     font-size: 20px;
@@ -204,10 +212,6 @@ font-size: 20px;
     width: 30px;
     height: 30px;
     margin-right: 5px;
-}
-
-.footer-github p{
-    padding: 8px 0px;
 }                    
  /* 768px - 375px */
  @media screen and (max-width: 767px) {
